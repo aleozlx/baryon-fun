@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.3)
+project(baryon-fun)
+find_package(Boost)
+add_executable(baryon-fun ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp)
+target_include_directories(baryon-fun PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src)
